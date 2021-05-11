@@ -25,7 +25,7 @@ OAUTH_TOKEN_SECRET = ''
 Then insert the seed users (or user) you want to the search to start from and determine parameters of the search from config.py
 
 ```
-mongo_db = 'twitter_stream_2'
+mongo_db = 'twitter_stream'
 collected_users_list = []
 tweets_count = 0
 tweets_per_user = 200
@@ -34,4 +34,12 @@ limit_depth = 0
 seed_names = ', '.join([])
 start_time = time.time()
 ```
+
+For example ```seed_names = ', '.join(['user_A_screen_name'])```
+
+The last thing is to run the script from the terminal 
+
+```python3 build_db.py```
+
+The script will print updates as it collects the data with each user, each 10 users and when the the data collection is finished. The collected data will be present in specified MongoDB database whose name is set in the config.py file, and the database is created on the spot if it didn't exist before.
 
