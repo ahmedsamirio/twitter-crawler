@@ -1,0 +1,10 @@
+name: twitter-crawler
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pymongo
+  - pip:
+    - twitter==1.18.0
+
+prefix: /home/ahmed/anaconda3/envs/twitter-crawler
