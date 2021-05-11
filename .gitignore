@@ -1,0 +1,9 @@
+# for Jupytext ignoring ipynb files
+*.ipynb
+
+# api keys
+api_config.py
+
+# databases
+*.db
+*.csv
